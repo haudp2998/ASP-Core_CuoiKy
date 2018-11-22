@@ -1,0 +1,11 @@
+C:\Users\Dell\source\repos\ASP-Core_CuoiKy\ASP-Core_CuoiKy\bin\Debug\netcoreapp2.0\ASP-Core_CuoiKy.deps.json
+C:\Users\Dell\source\repos\ASP-Core_CuoiKy\ASP-Core_CuoiKy\bin\Debug\netcoreapp2.0\ASP-Core_CuoiKy.runtimeconfig.json
+C:\Users\Dell\source\repos\ASP-Core_CuoiKy\ASP-Core_CuoiKy\bin\Debug\netcoreapp2.0\ASP-Core_CuoiKy.runtimeconfig.dev.json
+C:\Users\Dell\source\repos\ASP-Core_CuoiKy\ASP-Core_CuoiKy\bin\Debug\netcoreapp2.0\ASP-Core_CuoiKy.dll
+C:\Users\Dell\source\repos\ASP-Core_CuoiKy\ASP-Core_CuoiKy\obj\Debug\netcoreapp2.0\ASP-Core_CuoiKy.csprojAssemblyReference.cache
+C:\Users\Dell\source\repos\ASP-Core_CuoiKy\ASP-Core_CuoiKy\obj\Debug\netcoreapp2.0\ASP-Core_CuoiKy.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\ASP-Core_CuoiKy\ASP-Core_CuoiKy\obj\Debug\netcoreapp2.0\ASP-Core_CuoiKy.AssemblyInfoInputs.cache
+C:\Users\Dell\source\repos\ASP-Core_CuoiKy\ASP-Core_CuoiKy\obj\Debug\netcoreapp2.0\ASP-Core_CuoiKy.AssemblyInfo.cs
+C:\Users\Dell\source\repos\ASP-Core_CuoiKy\ASP-Core_CuoiKy\bin\Debug\netcoreapp2.0\ASP-Core_CuoiKy.pdb
+C:\Users\Dell\source\repos\ASP-Core_CuoiKy\ASP-Core_CuoiKy\obj\Debug\netcoreapp2.0\ASP-Core_CuoiKy.dll
+C:\Users\Dell\source\repos\ASP-Core_CuoiKy\ASP-Core_CuoiKy\obj\Debug\netcoreapp2.0\ASP-Core_CuoiKy.pdb

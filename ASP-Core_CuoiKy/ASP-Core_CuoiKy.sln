@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP-Core_CuoiKy", "ASP-Core_CuoiKy\ASP-Core_CuoiKy.csproj", "{81F25842-9D22-46A8-8C1F-70364F2E5706}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81F25842-9D22-46A8-8C1F-70364F2E5706}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81F25842-9D22-46A8-8C1F-70364F2E5706}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81F25842-9D22-46A8-8C1F-70364F2E5706}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81F25842-9D22-46A8-8C1F-70364F2E5706}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7A1F55D0-C2AD-4B97-9C60-1118814F92D4}
+	EndGlobalSection
+EndGlobal
