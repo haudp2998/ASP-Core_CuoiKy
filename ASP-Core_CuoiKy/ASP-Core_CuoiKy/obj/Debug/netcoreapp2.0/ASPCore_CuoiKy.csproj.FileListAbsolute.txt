@@ -1,0 +1,4 @@
+C:\Users\Dell\Downloads\Github\ASP-Core_CuoiKy\ASP-Core_CuoiKy\ASP-Core_CuoiKy\obj\Debug\netcoreapp2.0\ASPCore_CuoiKy.csprojAssemblyReference.cache
+C:\Users\Dell\Downloads\Github\ASP-Core_CuoiKy\ASP-Core_CuoiKy\ASP-Core_CuoiKy\obj\Debug\netcoreapp2.0\ASPCore_CuoiKy.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Downloads\Github\ASP-Core_CuoiKy\ASP-Core_CuoiKy\ASP-Core_CuoiKy\obj\Debug\netcoreapp2.0\ASPCore_CuoiKy.AssemblyInfoInputs.cache
+C:\Users\Dell\Downloads\Github\ASP-Core_CuoiKy\ASP-Core_CuoiKy\ASP-Core_CuoiKy\obj\Debug\netcoreapp2.0\ASPCore_CuoiKy.AssemblyInfo.cs

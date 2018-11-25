@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace ASP_Core_CuoiKy.Areas.Admin.Controllers
 {
     [Area("admin")]
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         public IActionResult Index()
         {

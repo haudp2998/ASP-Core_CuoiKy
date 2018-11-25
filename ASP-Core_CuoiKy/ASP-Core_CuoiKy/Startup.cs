@@ -3,12 +3,17 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using ASP_Core_CuoiKy.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.FileProviders;
+using ReflectionIT.Mvc.Paging;
 
 namespace ASP_Core_CuoiKy
 {
@@ -25,6 +30,11 @@ namespace ASP_Core_CuoiKy
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddSession();
+            services.AddPaging();
+            services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
+            var connection = Configuration.GetConnectionString("OnlineShop");
+            services.AddDbContext<OnlineShopContext>(options => options.UseSqlServer(connection));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -39,7 +49,7 @@ namespace ASP_Core_CuoiKy
             {
                 app.UseExceptionHandler("/Home/Error");
             }
-
+            app.UseSession();
             app.UseStaticFiles();
             app.UseStaticFiles(new StaticFileOptions()
             {
@@ -55,7 +65,7 @@ namespace ASP_Core_CuoiKy
                     );
                 routes.MapRoute(
                      name: "admin",
-                     template: "{area=Admin}/{controller=Home}/{action=Index}/{id?}"
+                     template: "{area=admin}/{controller=Home}/{action=Index}/{id?}"
                     );
                 
             });
