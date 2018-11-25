@@ -21,6 +21,14 @@
 </p>
 <table class="table">
     <thead>
+        <form method="get" class="form-inline">
+            <input name="searchString" class="form-control" placeholder="Search..."
+                   value="@Model.RouteValue["searchString"]" />
+            <button type="submit" class="btn btn-info">
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search
+            </button>
+        </form>
+        
         <tr>
             <th>
                 @Html.SortableHeaderFor(model => model.UserName, this.Model)
@@ -126,5 +134,5 @@
 
 <nav aria-label="Suppliers navigation example">
     <vc:pager paging-list="@Model" />
-    @await this.Component.InvokeAsync("Pager", new { pagingList = this.Model })
+    @await this.Component.InvokeAsync("Pager", new { pagingList = this.Model, @searchString = @ViewBag.SearchString } )
 </nav>

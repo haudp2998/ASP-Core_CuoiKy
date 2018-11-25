@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using ASP_Core_CuoiKy.Models;
 using PagedList;
 using ReflectionIT.Mvc.Paging;
+using Microsoft.AspNetCore.Routing;
 
 namespace ASP_Core_CuoiKy.Areas.Admin.Controllers
 {
@@ -24,10 +25,18 @@ namespace ASP_Core_CuoiKy.Areas.Admin.Controllers
 
         // GET: Admin/Users
         [HttpGet("/admin/Users")]
-        public async Task<IActionResult> Index(int page = 1, string sortExpression = "UserName")
+        public async Task<IActionResult> Index(string searchString, int page = 1, string sortExpression = "UserName")
         {
-            var us = _context.User.AsNoTracking();
+            var us = _context.User.AsNoTracking().AsQueryable();
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                us = us.Where(p => p.UserName.Contains(searchString) || p.Name.Contains(searchString));
+            }
             var model = await PagingList.CreateAsync(us,3,page,sortExpression,"Username");
+            model.RouteValue = new RouteValueDictionary {
+        { "searchString", searchString}
+    };
+            //ViewBag.SearchString = searchString;
             return View(model);
         }
 
